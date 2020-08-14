@@ -1,19 +1,17 @@
 class Solution(object):
 
     def check_parantheses(self, list):
-        left_bracket = ['(', '[', '{']
         bracket_dict = {'(' : ')', '[' : ']', '{' : '}'}
 
         for index, bracket in enumerate(list):
-            newList = list[:]
-            if index + 1 == len(newList):
+            if index + 1 == len(list):
                 return False
-            if bracket in left_bracket:
-                if newList[index + 1] == bracket_dict.get(bracket):
-                    newList.pop(index)
-                    newList.pop(index)
-                    return newList
-                if newList[index + 1] not in left_bracket and newList[index + 1] != bracket_dict.get(bracket):
+            if bracket in bracket_dict:
+                if list[index + 1] == bracket_dict.get(bracket):
+                    list.pop(index)
+                    list.pop(index)
+                    return True
+                if list[index + 1] not in bracket_dict and list[index + 1] != bracket_dict.get(bracket):
                     return False
 
 
@@ -31,7 +29,6 @@ class Solution(object):
                 return True
             if self.check_parantheses(string_list) == False:
                 return False
-            string_list = self.check_parantheses(string_list)
 
 
 
