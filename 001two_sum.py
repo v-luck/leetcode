@@ -20,4 +20,3 @@ class Solution(object):
 dog = Solution()
 print(dog.twoSum([-3, 4, 3, 90], 0))
 
-p
