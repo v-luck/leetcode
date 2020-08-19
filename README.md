@@ -9,3 +9,5 @@ https://leetcode.com/problems/reverse-integer/ - **002reverse_integer.py**
 https://leetcode.com/problems/valid-parentheses/ - **003valid_parentheses.py**
 
 https://leetcode.com/problems/roman-to-integer/ - **004roman_numerals.py**
+
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/ - **005remove_duplicates_from_list.py**
